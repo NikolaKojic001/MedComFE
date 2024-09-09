@@ -15,6 +15,7 @@ import Report from './components/Report/Report';
 import LoyaltyProgram from './components/LoyaltyProgram/LoyaltyProgram';
 import PastGrades from './components/PastGrades/PastGrades';
 import Statistic from './components/Statistic/Statistic';
+import UserReports from './components/UserReports/UserReports';
 import { jwtDecode } from 'jwt-decode';
 
 const App = () => {
@@ -70,6 +71,7 @@ const App = () => {
           <>
             <Route path="/user/reservations" element={<ReservationsView />} />
             <Route path="/user/grades" element={<PastGrades />} />
+            <Route path="/user/reports" element={<UserReports />} />
           </>
         )}
       </Routes>

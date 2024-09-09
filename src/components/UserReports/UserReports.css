@@ -1,0 +1,52 @@
+.user-reports {
+    background: linear-gradient(135deg, #6a00f4, #00d4ff); /* Ljubičasto-plavi gradient */
+    padding: 20px;
+    min-height: 100vh;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .error-message {
+    color: #ff5555;
+    background-color: rgba(255, 85, 85, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .reports-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .report-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .report-card h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .report-card p {
+    color: #dcdcdc;
+  }
+  
+  .no-reply {
+    color: #ff5555; /* Crvena boja za poruku 'Not replayed' */
+    font-style: italic;
+  }

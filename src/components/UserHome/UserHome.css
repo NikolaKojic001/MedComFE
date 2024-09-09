@@ -1,0 +1,34 @@
+.userhome-container {
+    padding: 20px;
+    background: linear-gradient(120deg, #ff6f91, #ff9671);
+    color: white;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .loyalty-program-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .loyalty-program-card h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .loyalty-program-card p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .error-message {
+    color: #ff0000;
+    font-weight: bold;
+  }

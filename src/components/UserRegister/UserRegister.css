@@ -1,0 +1,126 @@
+/* src/components/UserRegister/UserRegister.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+}
+
+.register-register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 20px; 
+  background-image: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.register-register-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px; 
+  color: white;
+}
+
+.register-brand-title {
+  font-size: 3rem; 
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.register-brand-subtitle {
+  font-size: 1.2rem; 
+  font-weight: 300;
+  max-width: 400px;
+  margin-top: 0;
+}
+
+.register-register-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px; 
+}
+
+.register-form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px; 
+  display: flex;
+  flex-direction: row;
+  gap: 20px; 
+}
+
+.register-register-form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.register-form-group-left,
+.register-form-group-right {
+  flex: 1;
+}
+
+.register-form-group-left {
+  margin-right: 50px; 
+}
+
+.register-form-group {
+  margin-bottom: 15px;
+}
+
+.register-form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.register-form-group input {
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.register-form-group input:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+
+.register-register-button {
+  padding: 10px;
+  background-color: #2575fc;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 225px; 
+  margin-left: 450px;
+  width: 10%;
+  align-self: center; 
+  position: absolute;
+}
+
+.register-register-button:hover {
+  background-color: #1a5dbb;
+}
+
+.register-error-message,
+.register-success-message {
+  margin-top: 15px;
+  color: red;
+  font-weight: bold;
+}

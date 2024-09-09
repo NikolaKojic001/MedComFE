@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+}
+
+.login-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 50px;
+  background-image: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.login-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px; 
+  color: white;
+}
+
+.login-brand-title {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: bold;
+}
+
+.login-brand-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  max-width: 400px;
+  margin-top: 0;
+}
+
+.login-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 50px; 
+}
+
+.login-form-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form-group {
+  margin-bottom: 15px;
+}
+
+.login-label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.login-input:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+
+.login-button {
+  padding: 10px;
+  background-color: #2575fc;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #1a5dbb;
+}
+
+.login-error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.login-register-link {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.login-register-link a {
+  color: #2575fc;
+  text-decoration: none;
+}
+
+.login-register-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .login-left,
+  .login-right {
+    flex: none;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .login-left {
+    text-align: center;
+    padding: 20px;
+  }
+}

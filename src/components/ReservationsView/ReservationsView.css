@@ -1,0 +1,91 @@
+.reservations-view-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .reservations-view-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .reservations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .reservation-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .reservation-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .reservation-details {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+  
+  .reservation-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .reservation-cancel-btn,
+  .reservation-book-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .reservation-cancel-btn {
+    background-color: #ff4c4c;
+    color: white;
+  }
+  
+  .reservation-cancel-btn:hover {
+    background-color: #d43f3f;
+    transform: translateY(-3px);
+  }
+  
+  .reservation-book-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .reservation-book-btn:hover {
+    background-color: #388e3c;
+    transform: translateY(-3px);
+  }
+  
+  @media (max-width: 768px) {
+    .reservations-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .reservations-view-title {
+      font-size: 2rem;
+    }
+  }

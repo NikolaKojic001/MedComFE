@@ -56,13 +56,13 @@ const App = () => {
             <Route path="/admin/dashboard" element={<AdminDashboard />} />
             <Route path="/register-company" element={<RegisterCompany />} />
             <Route path="/register-admin" element={<RegisterAdmin />} />
+            <Route path="/reports/review" element={<Report />} />
             <Route path="/lp" element={<LoyaltyProgram />} />
           </>
         )}
         {userRole === 'CompanyAdmin' && (
           <>
             <Route path="/company-admin/dashboard" element={<CompanyAdminDashboard />} />
-            <Route path="/reports/review" element={<Report />} />
             <Route path="/statistic" element={<Statistic />} />
 
           </>

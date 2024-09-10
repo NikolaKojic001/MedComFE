@@ -28,6 +28,7 @@ const NavBar = ({ userRole, onLogout }) => {
             <>
               <Link to="/register-company" className="nav-link">Register Company</Link>
               <Link to="/register-admin" className="nav-link">Register Admin</Link>
+              <Link to="/reports/review" className="nav-link">Reports</Link>
               <Link to="/lp" className="nav-link">Loyalty Program</Link>
             </>
           )}
@@ -42,7 +43,6 @@ const NavBar = ({ userRole, onLogout }) => {
 
           {userRole === 'CompanyAdmin' && (
             <>
-              <Link to="/reports/review" className="nav-link">Reports</Link>
               <Link to="/statistic" className="nav-link">Statistic</Link>
             </>
           )}

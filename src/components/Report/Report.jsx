@@ -34,7 +34,7 @@ const Report = () => {
     const fetchReports = async (companyID) => {
       try {
         console.log('Fetching reports with Company ID:', companyID); // Log companyID used for fetching reports
-        const response = await axios.get(`/companies/get/all/reports?companyID=${companyID}`, {
+        const response = await axios.get(`/companies/get/all/reports`, {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('token')}`
           }
